@@ -1,0 +1,421 @@
+<!-- send to: jtsilva@senacrs.com.br
+assunto: avaliação final
+msg: github link & vercel -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME - Sparta</title>
+        <!-- fonte header -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./lib/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <!-- TEM QUE ANIMAR O HOVER DOS NAV-LINKS -->
+                    <!-- PESQUISAR DIFERENÇA DE INLINE PARA DISPLAY FLEX -->
+                    <button class="navbar-toggler navbar-dark m-auto" data-bs-toggle="collapse" data-bs-target="#navDD">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse justify-content-between align-items-baseline" id="navDD">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item dropdown">
+                                <p class="nav-item dropdown-toggle fontStyle nav-link" data-bs-toggle="dropdown">comunidade</p>
+                                <ul class="dropdown-menu bg-info-subtle position-absolute">
+                                    <li class="dropdown-item"><a href="#" class="nav-link">fórum</a></li>
+                                    <li class="dropdown-item"><a href="#" class="nav-link">eventos</a></li>
+                                    <li class="dropdown-item"><a href="#" class="nav-link">atualizações</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item fontStyle"><a href="#cosmeticos" class="nav-link">cosméticos</a></li>
+                            <li class="nav-item fontStyle"><a href="#" class="nav-link">comprar cash</a></li>
+                            <li class="nav-item dropdown">
+                                <p class="nav-item dropdown-toggle fontStyle nav-link" data-bs-toggle="dropdown">suporte</p>
+                                <ul class="dropdown-menu bg-info-subtle position-absolute">
+                                    <li class="dropdown-item"><a href="#" class="nav-link">enviar ticket</a></li>
+                                    <li class="dropdown-item"><a href="#" class="nav-link">contate-nos</a></li>
+                                    <li class="dropdown-item"><a href="./html/faq.html" class="nav-link">FAQ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class="navbar-brand" href="./index.html"><img src="./lib/images/logo_sparta.png" id="logo_header" alt="Logo, Sparta"/></a>
+                        <ul class="navbar-nav align-items-center" id="navListaConta">
+                            <li class="nav-item fontStyle"><a class="nav-link" href="#">entrar</a></li>
+                            <li class="nav-item fontStyle"><a class="nav-link" href="./html/createacc.html">criar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- main também tem um img (aplicado pelo css) -->
+        <main class="container_main container_flex">
+            <button type="button">
+                BAIXAR
+                <small>00.00GB</samll>
+            </button>
+        </main>
+        <!-- seção de novidades, cada .novidade é um item da seção -->
+        <section id="novidades">
+            <div class="container_novidade container" id="novidadesPadrao">
+                <h2>NOVIDADES</h2>
+                <div class="novidade">
+                    <h3>Título da novidade</h3>
+                    <p> 
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero expedita quae accusamus voluptate illum
+                        excepturi ea alias. Minima, delectus doloribus. <a href="./html/noticia1.html"><span class="lermais">Ler mais...</span></a>
+                    </p>
+                    <div class="imagem_novidade">
+                        <img src="./lib/images/img_noticia1.png" alt="Imagem ilustrando a novidade"/>
+                    </div>
+                </div>
+                <div class="novidade">
+                    <h3>Título da novidade</h3>
+                    <p> 
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero expedita quae accusamus voluptate illum
+                        excepturi ea alias. Minima, delectus doloribus. <a href="./html/noticia2.html"><span class="lermais">Ler mais...</span></a>
+                    </p>
+                    <div class="imagem_novidade">
+                        <img src="./lib/images/img_noticia1.png" alt="Imagem ilustrando a novidade"/>
+                    </div>
+                </div>
+            </div>
+            <div class="botaomostrar">
+                <div id="divMostrarNov" title="clique para mostrar mais novidades!">
+                    <p>mostrar mais<span class="span_setaNoticia">▽</p></span>
+                </div>
+            </div>
+                <!-- a div abaixo está oculta porque tem um botão para revelar as novidades -->
+                <div class="container_novidade container" id="novidadesplus">
+                    <div class="novidade">
+                        <h3>Título da novidade</h3>
+                        <p> 
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero expedita quae accusamus voluptate illum
+                            excepturi ea alias. Minima, delectus doloribus. <a href="./html/noticia1.html"><span class="lermais">Ler mais...</span></a>
+                        </p>
+                        <div class="imagem_novidade">
+                            <img src="./lib/images/img_noticia1.png" alt="Imagem ilustrando a novidade"/>
+                        </div>        
+                    </div>
+                    <div class="novidade">
+                        <h3>Título da novidade</h3>
+                        <p> 
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero expedita quae accusamus voluptate illum
+                            excepturi ea alias. Minima, delectus doloribus. <a href="./html/noticia1.html"><span class="lermais">Ler mais...</span></a>
+                        </p>
+                        <div class="imagem_novidade">
+                            <img src="./lib/images/img_noticia1.png" alt="Imagem ilustrando a novidade"/>
+                        </div>
+                    </div>
+                    <div class="novidade">
+                        <h3>Título da novidade</h3>
+                        <p> 
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero expedita quae accusamus voluptate illum
+                            excepturi ea alias. Minima, delectus doloribus. <a href="./html/noticia1.html"><span class="lermais">Ler mais...</span></a>
+                        </p>
+                        <div class="imagem_novidade">
+                            <img src="./lib/images/img_noticia1.png" alt="Imagem ilustrando a novidade"/>
+                        </div>
+                    </div>
+                    <div class="novidade">
+                        <h3>Título da novidade</h3>
+                        <p> 
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero expedita quae accusamus voluptate illum
+                            excepturi ea alias. Minima, delectus doloribus. <a href="./html/noticia1.html"><span class="lermais">Ler mais...</span></a>
+                        </p>
+                        <div class="imagem_novidade">
+                            <img src="./lib/images/img_noticia1.png" alt="Imagem ilustrando a novidade"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cosmeticos">
+            <hr>
+            <div class="container">
+                <div class="cabecalho_cosmeticos">
+                    <h1>COSMÉTICOS</h1>
+                    <div id="pesquisa_cosm">
+                        <input type="search" placeholder="procure aqui pelo cosmético!"/><i class="bi bi-search"></i>
+                    </div>
+                    <div id="carrosselCosmeticos" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active w-100" data-bs-interval="2200">
+                                <img src="https://via.placeholder.com/500x400" class="rounded-3"/>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2200">
+                                <img src="https://via.placeholder.com/500x400" class="rounded-3"/>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2200">
+                                <img src="https://via.placeholder.com/500x400" class="rounded-3"/>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2200">
+                                <img src="https://via.placeholder.com/500x400" class="rounded-3"/>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" data-bs-target="#carrosselCosmeticos" data-bs-slide="prev" type="button">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" data-bs-target="#carrosselCosmeticos" data-bs-slide="next" type="button">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row" id="rowCosmeticos">
+                    <div class="col-md-3 pt-5">
+                        <div class="card bg-dark-subtle">
+                            <!-- testar a diferença de responsividade se montar o card com row e cols
+                            também fazer que ao clicar em adquirir abrir com modal com um formulário para fazer login-->
+                            <div class="card-header">
+                                PASSE DE BATALHA
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="w-100 rounded" src="./lib/images/coins.png"/>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora in corrupti unde quia assumenda.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target=".loginObg" value="Passe de batalha">ADQUIRIR</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-5">
+                        <div class="card bg-dark-subtle">
+                            <div class="card-header">
+                                PASSE DE BATALHA
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="w-100 rounded" src="./lib/images/coins.png"/>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora in corrupti unde quia assumenda.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target=".loginObg" value="Passe de batalha">ADQUIRIR</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-5">
+                        <div class="card bg-dark-subtle">
+                            <div class="card-header">
+                                PASSE DE BATALHA
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="w-100 rounded" src="./lib/images/coins.png"/>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora in corrupti unde quia assumenda.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target=".loginObg" value="Passe de batalha">ADQUIRIR</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-5">
+                        <div class="card bg-dark-subtle">
+                            <div class="card-header">
+                                PASSE DE BATALHA
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="w-100 rounded" src="./lib/images/coins.png"/>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora in corrupti unde quia assumenda.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target=".loginObg" value="Passe de batalha">ADQUIRIR</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-5">
+                        <div class="card bg-dark-subtle">
+                            <div class="card-header">
+                                PASSE DE BATALHA
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="w-100 rounded" src="./lib/images/coins.png"/>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora in corrupti unde quia assumenda.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target=".loginObg" value="Passe de batalha">ADQUIRIR</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-5">
+                        <div class="card bg-dark-subtle">
+                            <div class="card-header">
+                                PASSE DE BATALHA
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="w-100 rounded" src="./lib/images/coins.png"/>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora in corrupti unde quia assumenda.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target=".loginObg" value="Passe de batalha">ADQUIRIR</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-5">
+                        <div class="card bg-dark-subtle">
+                            <div class="card-header">
+                                PASSE DE BATALHA
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="w-100 rounded" src="./lib/images/coins.png"/>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora in corrupti unde quia assumenda.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target=".loginObg" value="Passe de batalha">ADQUIRIR</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-5">
+                        <div class="card bg-dark-subtle">
+                            <div class="card-header">
+                                PASSE DE BATALHA
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="w-100 rounded" src="./lib/images/coins.png"/>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora in corrupti unde quia assumenda.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target=".compraCash" value="Passe de batalha">ADQUIRIR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal para quando o login é obrigatório -->
+                <div class="modal loginObg bg-opacity-75">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title">FAZER LOGIN</h5>
+                                <!-- <button data-bs-dismiss="modal" class="btn-close"></button> -->
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <label class="form-label">nome de usuário:</label>
+                                    <input class="form-control" type="text" placeholder="insira o seu nome de usuário"/>
+                                    <label class="form-label">senha:</label>
+                                    <input class="form-control" type="password" placeholder="insira a sua senha"/>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">confirmar</button>
+                                <button class="btn btn-danger" data-bs-dismiss="modal">cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal de realizando compra -->
+                <div class="modal rlzCompra" data-bs-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title">REALIZAR COMPRA</h5>
+                                <button data-bs-dismiss="modal" class="btn-close btn-close-white"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>realizando compra como <span class="verde" id="usuarioCompra">user</span></h6>
+                                <h5>Tem certeza que você deseja comprar:</h5>
+                                <h6><span id="itemCompra" class="verde">button.value</span> (<span id="qtdCompra" class="verde">qtd</span>) por <span id="itemPrice" class="verde">000</span> cash?</h6>
+                            </div>
+                            <div class="modal-footer justify-content-start">
+                                <button class="btn btn-success" data-bs-dismiss="modal">confirmar</button>
+                                <button class="btn btn-danger" data-bs-dismiss="modal">cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- building... -->
+                <div class="modal compraCash" data-bs-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title">REALIZAR COMPRA</h5>
+                                <button data-bs-dismiss="modal" class="btn-close btn-close-white"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>realizando compra como <span class="verde" id="usuarioCompra">user</span></h6>
+                                <h5>Você está prestes a comprar <span id="itemCompra" class="verde">cash</span> por R$<span id="itemCompra" class="verde">00.00</span>:</h5>
+                                <label class="form-label">CPF:</label>
+                                <input class="form-control" type="text"/>
+                                <label class="form-label">forma de pagamento:</label>
+                                <select class="form-select">
+                                    <option value="boleto">boleto</option>
+                                    <option value="cartao">cartão</option>
+                                    <option value="debito">débito</option>
+                                    <option value="pagseguro">pagseguro</option>
+                                </select>
+                                <label class="form-label">cupom:</label>
+                                <input class="form-control" type="text"/>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-bs-dismiss="modal">confirmar</button>
+                                <button class="btn btn-danger" data-bs-dismiss="modal">cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>2023 &copy; Sparta - Todos os direitos reservados</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js">
+        </script>
+        <script src="./lib/bootstrap.min.js">
+        </script>
+        <script src="./js/main.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #022C44;
+}
+
+.container{
+    max-width: 1360px;
+    width: 100%;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100px;
+    background-color: rgba(1, 41, 65, 0.95);
+}
+
+.fontStyle{
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/*remove o margin default dos elementos*/
+.dropdown, header p{
+    margin: 0px;
+}
+
+/*comunidade & suporte, cosméticos & comprar cash*/
+.navbar-collapse p, .navbar-collapse .fontStyle a.nav-link{
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-collapse p:hover, .navbar-collapse .nav-link.show, .navbar-collapse .fontStyle a.nav-link:hover{
+    color: rgb(221, 221, 221);
+}
+
+#navListaConta li a{
+    color: rgb(1, 206, 1);
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+#navListaConta li a:hover{
+    color: rgb(0, 167, 0);
+}
+
+#logo_header{
+    width: 90px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#logo_header:hover{
+    transform: scale(1.06);
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.row{
+    color: white;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px){
+    .navbar-brand{
+        display: none;
+    }
+    header{
+        max-height: 325px;
+        height: 100%;
+    }
+    .nav-item, .nav-link{
+        max-width: 91px;
+        width: 100%;
+    }
+    /*===== ↑ estlizações do header =====*/
+}
