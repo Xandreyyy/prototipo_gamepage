@@ -16,7 +16,6 @@ body{
 header{
     position: sticky;
     top: 0;
-    right: 0;
     z-index: 1;
     height: 100px;
     background-color: rgba(1, 41, 65, 0.95);
@@ -81,12 +80,8 @@ header{
         width: 100%;
     }
     /*===== ↑ estlizações do header =====*/
-    .bgNoticia h1:nth-child(1){
-        text-align: center;
-        width: 100%;
-    }
-    .colheader h1{
-        width: 100%;
+    .containermain{
+        padding: 0;
     }
     .navLateral{
         display: none;
