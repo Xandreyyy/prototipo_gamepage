@@ -10,7 +10,7 @@ body{
 
 .container{
     max-width: 1360px;
-    /* por que ao aplicar esse padding a página cria uma rolagem horizontal?
+    /* por que ao aplicar esse padding a página cria uma rolagem horizontal? vagina
     padding: 0;*/
     width: 100%;
 }
@@ -18,7 +18,7 @@ body{
 header{
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 3;
     height: 100px;
     background-color: rgba(1, 41, 65, 0.95);
 }
@@ -66,7 +66,7 @@ header{
 }
 
 /* .dropdown-menu{
-    width: 25%;
+    width: 25%; vagina
     position: absolute;
 } */
 

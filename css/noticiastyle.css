@@ -16,7 +16,7 @@ body{
 header{
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 3;
     height: 100px;
     background-color: rgba(1, 41, 65, 0.95);
 }
@@ -67,67 +67,6 @@ header{
     display: none;
 }
 
-.imagem_fundonoticia{
-    background-image: url(../lib/images/img_noticia1.png);
-    opacity: 0.6;
-    background-size: cover;
-    background-position: center center;
-    width: 95%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    color: white;
-}
-
-.row{
-    font-size: 1em;
-}
-
-.noticiabg{
-    background-color: #002547;
-    color: white;
-}
-
-.noticiabg div{
-    height: fit-content;
-}
-
-.bgcorrecaobug{
-    background-color: rgba(0, 170, 119, 0.5);
-    width: 290px;
-    border-radius: 12px;
-}
-
-.userArticleC{
-    height: 40px;
-}
-
-.nomeChamp{
-    width: fit-content;
-    border-bottom: 3px solid rgb(0, 94, 66);
-    margin-left: 8px;
-}
-
-.nomeAtt{
-    width: 90px;
-    border-bottom: 3px solid rgb(0, 170, 119);
-    height: fit-content;
-}
-
-.bi-check-all::before{
-    height: 30px;
-    font-size: 22px;
-}
-
-footer{
-    padding: 20px;
-    background-color: #011c2c;
-    text-align: center;
-    color: white;
-    margin: 0;
-}
-
 @media screen and (min-width: 360px) and (max-width: 767px){
     .navbar-brand{
         display: none;
@@ -141,7 +80,132 @@ footer{
         width: 100%;
     }
     /*===== ↑ estlizações do header =====*/
-    .carousel-inner{
-        max-width: 335px;
+    .containermain{
+        padding: 0;
     }
+    .navLateral{
+        display: none;
+    }
+    .article-content{
+        flex-direction: column;
+    }
+    section h5{
+        margin: 10px 0 10px 0;
+    }
+    .lista-buff{
+        padding: 0 0 0 15px;
+    }
+    section ul li{
+        padding-bottom: 10px;
+    }
+}
+
+.colheader{
+    height: 350px;
+    position: relative;
+}
+
+.colheader h1{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.imgbg{
+    background-image: url(../lib/images/img_noticia1.png);
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    opacity: 60%;
+}
+
+.info-postagem{
+    color: #ccc;
+}
+
+main h2{
+    font-size: 1.9em;
+}
+
+main h5{
+    font-size: 1.4em;
+}
+
+main h6, main p{
+    font-size: 1.1em;
+}
+
+.articlebg{
+    background-color: #063753;
+    border-radius: 5px;
+    color: white;
+    height: fit-content;
+}
+
+.article-content{
+    display: flex;
+}
+
+.navLateral{
+    background-color: #063753;
+    border-radius: 5px;
+    color: white;
+    height: fit-content;
+    padding: 12px;
+    position: sticky;
+    top: 110px;
+    width: 250px;
+    z-index: 1;
+}
+
+ol li{
+    padding-bottom: 8px;
+}
+
+ol li::marker{
+    font-weight: bold;
+}
+
+ol .nav-link:hover{
+    color: #c7c7c7;
+}
+
+.bi-arrow-down{
+    color: rgb(255, 30, 30);
+    font-size: 18px;
+}
+
+.bi-arrow-up{
+    color: rgb(2, 192, 18);
+    font-size: 18px;
+}
+
+.nome-personagem{
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    transition: 0.5s;
+    width: fit-content;
+}
+
+.nome-personagem:hover{
+    border-bottom: 3px solid rgb(0, 94, 66);
+}
+
+img[alt="Foto do personagem"]{
+    height: fit-content;
+}
+
+#attMenu-carousel img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer{
+    margin-top: 200px;
+    padding: 20px;
+    background-color: #011c2c;
+    text-align: center;
+    color: white;
 }
