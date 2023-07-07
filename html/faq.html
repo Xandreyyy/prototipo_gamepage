@@ -50,25 +50,25 @@
         </nav>
     </header>
     <div class="container">
-        <div class="row pt-5">
-            <div class="col-md-6 m-auto">
+        <div class="row pt-5 justify-content-center">
+            <div class="col-md-6">
                 <h1 class="text-center">PERGUNTAS FREQUENTES</h1>
                 <p>
                     Na barra lateral esquerda, consta todos os tópicos sobre as perguntas realizadas frequentemente.
                 </p>
             </div>
         </div>
-        <!-- botões pane -->
-        <div class="row">
-            <aside class="col-md-2">
-                <nav class="nav nav-pills flex-column">
+        <div class="row justify-content-center">
+            <div class="col-md-2">
+                <nav class="col flex-column nav nav-pills">
                     <button class="nav-link active" type="button" data-bs-target="#compras" data-bs-toggle="tab">compras</button>
                     <button class="nav-link" type="button" data-bs-target="#denuncias" data-bs-toggle="tab">denúncias</button>
                     <button class="nav-link" type="button" data-bs-target="#compatibilidade" data-bs-toggle="tab">compatibilidade</button>
+                    <!-- checar na documentação sobre accordion para entender o porquê desse comportamento -->
                 </nav>
-            </aside>
+            </div>
             <!-- pane 1 -->
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <div class="tab-content">
                     <div class="tab-pane active" id="compras">
                         <div class="row">
@@ -171,7 +171,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- ESTILIZAR O MENU COM O HOVER, JÁ QUE OS LI DOS .DROPDOWN FICAM AZUIS AO SEREM CLICADOS -->
                     <!-- pane 3 -->
                     <div class="tab-pane" id="compatibilidade">
                         <div class="row">
@@ -240,6 +239,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
     <script src="../lib/bootstrap.min.js">

@@ -70,6 +70,13 @@ header{
 .row{
     color: white;
 }
+footer{
+    margin-top: 200px;
+    padding: 20px;
+    background-color: #011c2c;
+    text-align: center;
+    color: white;
+}
 
 @media screen and (min-width: 360px) and (max-width: 767px){
     .navbar-brand{
@@ -84,12 +91,4 @@ header{
         width: 100%;
     }
     /*===== ↑ estlizações do header =====*/
-}
-
-footer{
-    margin-top: 200px;
-    padding: 20px;
-    background-color: #011c2c;
-    text-align: center;
-    color: white;
 }
