@@ -188,7 +188,7 @@ footer{
     color: white;
 }
 
-@media screen and (min-width: 360px) and (max-width: 767px){
+@media screen and (max-width: 768px){
     .navbar-brand{
         display: none;
     }
@@ -221,7 +221,25 @@ footer{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 769px) and (max-width: 991px){
+    .navbar-brand{
+        display: none;
+    }
+    header{
+        max-height: 325px;
+        height: 100%;
+    }
+    .nav-item, .nav-link{
+        max-width: 91px;
+        width: 100%;
+    }
+    /*===== ↑ estlizações do header =====*/
+    .navLateral{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1023px){
     .containermain{
         padding: 0;
     }

@@ -70,6 +70,7 @@ header{
 .row{
     color: white;
 }
+
 footer{
     margin-top: 200px;
     padding: 20px;
@@ -78,7 +79,7 @@ footer{
     color: white;
 }
 
-@media screen and (min-width: 360px) and (max-width: 767px){
+@media screen and (max-width: 768px){
     .navbar-brand{
         display: none;
     }
@@ -86,9 +87,16 @@ footer{
         max-height: 325px;
         height: 100%;
     }
-    .nav-item, .nav-link{
+    header .nav-item, header .nav-link{
         max-width: 91px;
         width: 100%;
     }
     /*===== ↑ estlizações do header =====*/
+}
+
+@media screen and (min-width: 769px) {
+    body .nav-link{
+        max-width: 180px;
+        width: 100%;
+    }
 }

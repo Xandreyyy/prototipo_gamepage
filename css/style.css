@@ -106,7 +106,7 @@ main button{
     border-radius: 12px;
     border: none;
     color: white;
-    background-color: #59AE04;
+    background-color: #12ae04;
     transition: 0.5s;
     font-size: 22px;
     cursor: pointer;
@@ -118,8 +118,8 @@ main button{
 }
 
 main button:hover{
-    background-color: #458802;
-    color: rgb(214, 214, 214);
+    background-color: #0d8a02;
+    color: rgb(189, 189, 189);
 }
 
 main button > small{
@@ -256,10 +256,6 @@ main button > small{
     color: rgb(185, 158, 3);
 }
 
-.carousel-inner{
-    max-width: 500px;
-}
-
 #cosmeticos{
     color: white;
 }
@@ -312,6 +308,11 @@ i.bi.bi-search::before{
     margin-left: 3px;
 }
 
+#carrosselCosmeticos img{
+    width: 100%;
+    border-radius: 8px;
+}
+
 footer{
     margin-top: 200px;
     padding: 20px;
@@ -335,7 +336,7 @@ footer{
     border-radius: 3px;
 }
 
-@media screen and (min-width: 360px) and (max-width: 767px){
+@media screen and (max-width: 768px){
     .navbar-brand{
         display: none;
     }
@@ -353,9 +354,6 @@ footer{
     }
     .novidade{
         width: 80%;
-    }
-    .carousel-inner{
-        max-width: 335px;
     }
     #rowCosmeticos{
         padding: 20px;

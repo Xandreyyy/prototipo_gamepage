@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" style="width: 100vw;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,25 +50,16 @@
         </nav>
     </header>
     <div class="container">
-        <div class="row pt-5 justify-content-center">
-            <div class="col-md-6">
-                <h1 class="text-center">PERGUNTAS FREQUENTES</h1>
+        <div class="row pt-5">
+            <div class="col text-center">
+                <h1>PERGUNTAS FREQUENTES</h1>
                 <p>
                     Na barra lateral esquerda, consta todos os tópicos sobre as perguntas realizadas frequentemente.
                 </p>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-md-2">
-                <nav class="col flex-column nav nav-pills">
-                    <button class="nav-link active" type="button" data-bs-target="#compras" data-bs-toggle="tab">compras</button>
-                    <button class="nav-link" type="button" data-bs-target="#denuncias" data-bs-toggle="tab">denúncias</button>
-                    <button class="nav-link" type="button" data-bs-target="#compatibilidade" data-bs-toggle="tab">compatibilidade</button>
-                    <!-- checar na documentação sobre accordion para entender o porquê desse comportamento -->
-                </nav>
-            </div>
-            <!-- pane 1 -->
-            <div class="col-md-7">
+        <div class="row flex-md-row-reverse flex-column-reverse justify-content-md-center">
+            <div class="col-12 col-md-8 col-lg-7">
                 <div class="tab-content">
                     <div class="tab-pane active" id="compras">
                         <div class="row">
@@ -239,7 +230,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <nav class="col-12 col-md-3 col-lg-2 pb-2 ps-2 p-md-0 nav nav-pills flex-column">
+                <button class="nav-link active" type="button" data-bs-target="#compras" data-bs-toggle="tab">compras</button>
+                <button class="nav-link" type="button" data-bs-target="#denuncias" data-bs-toggle="tab">denúncias</button>
+                <button class="nav-link" type="button" data-bs-target="#compatibilidade" data-bs-toggle="tab">compatibilidade</button>
+            </nav>
         </div>
     </div>
     <script src="../lib/bootstrap.min.js">

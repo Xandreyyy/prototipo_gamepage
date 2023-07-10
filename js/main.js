@@ -18,12 +18,13 @@ $(document).ready(function(){
             divNovidades.slideUp()
             btnNovidades.toggleClass("mostrarMenos")
             btnNovidades.appendTo("#novidadesPadrao")
-            $("#divMostrarNov").attr("title", "clique para mostrar menos!")
+            $("#divMostrarNov").attr("title", "clique para mostrar mais novidades!")
             btnNovidades.html('<p>mostrar mais<span class="span_setaNoticia">▽</p></span>')
         }
     })
     $(".bi-search").on("click", function(){
         console.log($("#pesquisa_cosm input").val())
+        $(".bi-search") ? $("#pesquisa_cosm input").val("") : $("#pesquisa_cosm input").val()
     })
 })
 
