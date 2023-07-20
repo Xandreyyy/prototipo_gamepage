@@ -115,7 +115,7 @@ main h2{
 }
 
 .reading::before{
-    border: 1px solid rgb(0, 94, 66);
+    border: 2px solid rgb(0, 94, 66);
     width: 100%;
 }
 
