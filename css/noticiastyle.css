@@ -99,18 +99,19 @@ main h2{
 
 .nome-personagem{
     font-size: 1.4em;
+    padding-bottom: 4px;
     position: relative;
     width: fit-content;
 }
 
 .nome-personagem::before{
-    border: 0px solid rgb(0, 94, 66);
+    border: 2px solid rgba(0, 94, 66, 0);
     content: '';
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
-    transition: 0.8s ease-out;
+    transition: 0.8s ease-in;
     width: 0%;
 }
 
