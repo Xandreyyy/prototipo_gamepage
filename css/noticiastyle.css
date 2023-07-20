@@ -97,8 +97,26 @@ main h2{
     font-size: 1.9em;
 }
 
-main h5{
+.nome-personagem{
     font-size: 1.4em;
+    position: relative;
+    width: fit-content;
+}
+
+.nome-personagem::before{
+    border: 0px solid rgb(0, 94, 66);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.8s ease-out;
+    width: 0%;
+}
+
+.reading::before{
+    border: 1px solid rgb(0, 94, 66);
+    width: 100%;
 }
 
 main h6, main p{
@@ -159,16 +177,6 @@ ol .nav-link:hover{
     background-color: #0130497c;
     border-radius: 5px;
     padding: 2px 5px;
-}
-
-.nome-personagem{
-    border-bottom: 3px solid rgba(0, 0, 0, 0);
-    transition: 0.5s;
-    width: fit-content;
-}
-
-.nome-personagem:hover{
-    border-bottom: 3px solid rgb(0, 94, 66);
 }
 
 img[alt="Foto do personagem"]{

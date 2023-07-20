@@ -43,13 +43,16 @@ $(document).ready(function(){
     //validador de senhas não adicionei porque vou entregar o quanto antes, pretendo termianr este projeto.
     $("form").on("submit", function(e){
         e.preventDefault()
-        if (validarEmail(iEmail.val()) && validarNickname(iNick.val())){
+        if (validarNickname(iNick.val()) && validarEmail(iEmail.val())){
             const toastMsg = $("#msgCadastroSucess")
             const toastSucess = new bootstrap.Toast(toastMsg)
             toastSucess.show()
             iNick.val("")
             iEmail.val("")
             iSenha.val("")
-        }
+            setTimeout(() =>{
+                window.location = '/index.html'
+            }, 4000)
+        }  
     })
 })
